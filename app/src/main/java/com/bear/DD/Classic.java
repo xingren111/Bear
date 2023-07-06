@@ -215,7 +215,8 @@ public class Classic extends AppCompatActivity implements ClassicCommonSkills {
         Thread t = new Thread(new Runnable() {
             @Override
             public void run() {
-                synchronized (ClassicSet.lock) {
+                ClassicSet.lock1.lock();
+                try {
                     while (true) {
                         isover = false;
                         ClassicCtrl ctrl = new ClassicCtrl();
@@ -289,7 +290,7 @@ public class Classic extends AppCompatActivity implements ClassicCommonSkills {
 
                             while (ClassicSet.nowplayer != 0) {
                                 try {
-                                    ClassicSet.lock.wait();
+                                    ClassicSet.conditions.get(0).await();
                                 } catch (InterruptedException e) {
                                     e.printStackTrace();
                                 }
@@ -307,7 +308,8 @@ public class Classic extends AppCompatActivity implements ClassicCommonSkills {
                             //判定
                             HashSet<ClassicPack> reflectset = new HashSet<ClassicPack>();
                             HashSet<ClassicPack> selfbset = new HashSet<ClassicPack>();
-                            System.out.println("开始判定，玩家所出技能为：" + pack.skill.skillname + "，人机1所出技能为：" + ClassicSet.packs.get(1).skill.skillname);
+                            System.out.println("开始判定");
+
 
                             for (ClassicPack cp : ClassicSet.packs) {
 //                                runOnUiThread(new Runnable() {
@@ -341,6 +343,7 @@ public class Classic extends AppCompatActivity implements ClassicCommonSkills {
                                     }
                                 }
                                 msg2.obj+="\n";
+                                System.out.println((String) msg2.obj);
                                 mHandler.sendMessage(msg2);
                                 if (skill.type == 2) {
                                     skill.classicbeen.getsth(cp);
@@ -377,10 +380,12 @@ public class Classic extends AppCompatActivity implements ClassicCommonSkills {
                             Message msg3 = new Message();
                             msg3.what=0;
                             msg3.obj = "第" + turns + "回合\n目前淘汰者：\n";
+                            System.out.println((String) msg3.obj);
                             mHandler.sendMessage(msg3);
                             for (ClassicPack cp : ClassicSet.outset) {
                                 Message msg4 = new Message();
                                 msg4.obj = cp.player.name + "\n";
+                                System.out.println((String) msg4.obj);
                                 mHandler.sendMessage(msg4);
                             }
 //                            Message msg4 = new Message();
@@ -459,18 +464,24 @@ public class Classic extends AppCompatActivity implements ClassicCommonSkills {
 //                                while (!isdone);
                                 break;
                             }
-                            pack.targets.clear();
+                            for(ClassicPack cp:ClassicSet.packs){
+                                cp.targets.clear();
+                                cp.skill=null;
+                                cp.isOK=false;
+                            }
                             Message msg9=new Message();
                             msg9.what=3;
                             msg9.obj=null;
                             mHandler.sendMessage(msg9);
-                            ClassicSet.lock.notifyAll();
+                            ClassicSet.conditions.get(ClassicSet.nowplayer).signal();
                         }
 //                        if (Classic.isover) {
 //                            continue;
 //                        }
                         break;
                     }
+                }finally {
+                    ClassicSet.lock1.unlock();
                 }
 
             }
@@ -481,8 +492,11 @@ public class Classic extends AppCompatActivity implements ClassicCommonSkills {
                     BEGIN.setEnabled(false);
                     t.start();
                     ClassicSet.nowplayer = 1;
-                    synchronized (ClassicSet.lock) {
-                        ClassicSet.lock.notifyAll();
+                    ClassicSet.lock1.lock();
+                    try{
+                        ClassicSet.conditions.get(1).signal();
+                    }finally {
+                        ClassicSet.lock1.unlock();
                     }
             }
         });

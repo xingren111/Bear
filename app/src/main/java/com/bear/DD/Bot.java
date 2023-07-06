@@ -88,11 +88,12 @@ public class Bot implements ClassicCommonSkills, ClassicCommonProb,Runnable{
         }
         prob.setAL(skills);
         while (true) {
-            synchronized (ClassicSet.lock) {
+            ClassicSet.lock1.lock();
+            try {
 
                 while (ClassicSet.nowplayer != cp.player.getPlayerid()) {
                     try {
-                        ClassicSet.lock.wait();
+                        ClassicSet.conditions.get(p.playerid).await();
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
@@ -104,8 +105,8 @@ public class Bot implements ClassicCommonSkills, ClassicCommonProb,Runnable{
                         ri.add();
                         ClassicSet.nowplayer = ri.getp();
                         ri = null;
-                        ClassicSet.lock.notifyAll();
-                        ClassicSet.lock.wait();
+                        ClassicSet.conditions.get(ClassicSet.nowplayer).signal();
+                        ClassicSet.conditions.get(p.playerid).await();
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
@@ -128,7 +129,7 @@ public class Bot implements ClassicCommonSkills, ClassicCommonProb,Runnable{
                     if (!csc.getBannedset().contains(cs)) {
                         System.out.println(cp.player.getName()+"DD数："+cp.ddnum+" 当前最大DD数："+max);
                         int fr=0;
-                        if(defTofreq.get(cs).get(max)<=10){
+                        if(max<=10){
                             fr = atkTofreq.get(cs).get(cp.ddnum) + defTofreq.get(cs).get(max);
                             System.out.println(cs.skillname+"权重1："+atkTofreq.get(cs).get(cp.ddnum));
                             System.out.println(cs.skillname+"权重2："+defTofreq.get(cs).get(max));
@@ -182,7 +183,9 @@ public class Bot implements ClassicCommonSkills, ClassicCommonProb,Runnable{
                         System.out.println(classicPack.player.name);
                     }
                 }
-                ClassicSet.lock.notifyAll();
+                ClassicSet.conditions.get(ClassicSet.nowplayer).signal();
+            }finally {
+                ClassicSet.lock1.unlock();
             }
 //            Classic.status.append(p.name+"完成技能选择");
         }

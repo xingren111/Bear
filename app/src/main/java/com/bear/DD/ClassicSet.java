@@ -3,6 +3,9 @@ package com.bear.DD;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 public class ClassicSet implements ClassicCommonSkills {
     static int maxplayernum;
@@ -10,6 +13,15 @@ public class ClassicSet implements ClassicCommonSkills {
     static HashSet<ClassicPack> outset = new HashSet<ClassicPack>();
     static int nowplayer = -1;
     static final byte[] lock = new byte[0];
+    static Lock lock1=new ReentrantLock();
+    static ArrayList<Condition> conditions=new ArrayList<Condition>()
+    {
+        {
+            for(int i=0;i<=5;i++){
+                add(lock1.newCondition());
+            }
+        }
+    };
     static Player Playerself = new Player(0, "玩家");
     static boolean isnewout = false;
     //    static ArrayList<ClassicPack> packs=new ArrayList<ClassicPack>(){
@@ -32,7 +44,7 @@ public class ClassicSet implements ClassicCommonSkills {
     static int getMaxdd(ClassicPack p) {
         int max = 0;
         for (ClassicPack cp : packs) {
-            if (cp == p) {
+            if (cp == p||outset.contains(cp)) {
                 continue;
             }
             if (cp.ddnum > max) {
