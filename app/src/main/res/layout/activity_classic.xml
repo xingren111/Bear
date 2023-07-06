@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:text="开始游戏"
+    android:textSize="35dp"
+    android:id="@+id/BEGIN"/>
+    <TextView
+        android:id="@+id/DDnum"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="当前DD数："
+        android:textSize="40dp"></TextView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/scr_status">
+
+                    <TextView
+                        android:id="@+id/status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="20dp"></TextView>
+                </ScrollView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="选择技能"
+            android:textSize="30dp"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/DD"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:gravity="center"
+                android:text="DD"
+                android:textSize="10dp"
+                android:enabled="false"></Button>
+
+            <Button
+                android:id="@+id/Reflect"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:gravity="center"
+                android:text="反弹"
+                android:textSize="10dp"
+                android:enabled="false"></Button>
+
+            <Button
+                android:id="@+id/SelfB"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:gravity="center"
+                android:text="自B"
+                android:textSize="10dp"
+                android:enabled="false"></Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/B"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:gravity="center"
+                android:text="B"
+                android:textSize="10dp"
+                android:enabled="false"></Button>
+
+            <Button
+                android:id="@+id/Prigen"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:gravity="center"
+                android:text="Prigen"
+                android:textAllCaps="false"
+                android:textSize="10dp"
+                android:enabled="false"></Button>
+
+            <Button
+                android:id="@+id/ThreeL"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:gravity="center"
+                android:text="3L"
+                android:textSize="10dp"
+                android:enabled="false"></Button>
+
+            <Button
+                android:id="@+id/Wow"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:gravity="center"
+                android:text="Wow"
+                android:textAllCaps="false"
+                android:textSize="10dp"
+                android:enabled="false"></Button>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/BigB"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:gravity="center"
+                android:text="BigB"
+                android:textAllCaps="false"
+                android:textSize="10dp"
+                android:enabled="false"></Button>
+
+            <Button
+                android:id="@+id/SB"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:gravity="center"
+                android:text="扇贝"
+                android:textSize="10dp"
+                android:enabled="false"></Button>
+
+        </LinearLayout>>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/sDef"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:gravity="center"
+                android:text="防"
+                android:textSize="10dp"
+                android:enabled="false"></Button>
+
+            <Button
+                android:id="@+id/lDef"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:gravity="center"
+                android:text="防3L"
+                android:textSize="10dp"
+                android:enabled="false"></Button>
+
+            <Button
+                android:id="@+id/wDef"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:gravity="center"
+                android:text="防Wow"
+                android:textAllCaps="false"
+                android:textSize="10dp"
+                android:enabled="false"></Button>
+
+            <Button
+                android:id="@+id/BigDef"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:gravity="center"
+                android:text="大防"
+                android:textSize="10dp"
+                android:enabled="false"></Button>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="选择目标"
+            android:textSize="30dp"></TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/Bot1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:text="人机1"></Button>
+
+                <Button
+                    android:id="@+id/Bot2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:text="人机2"></Button>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/Bot3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:text="人机3"></Button>
+
+                <Button
+                    android:id="@+id/Bot4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:text="人机4"></Button>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/Bot5"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:text="人机5"></Button>
+            </LinearLayout>
+        </LinearLayout>>
+
+
+
+
+
+    </LinearLayout>
+</LinearLayout>
