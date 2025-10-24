@@ -1,0 +1,8 @@
+{
+  "maxbotnum": 6,
+  "maxDamagedOnce": 2,
+  "initialHP": 2,
+  "HPTodd": 20,
+  "initialLv": 9,
+  "restartHP": 1
+}

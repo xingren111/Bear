@@ -1,0 +1,21 @@
+{
+  "name": "大棒",
+  "id": 12,
+  "cost":0,
+  "ismixture":true ,
+  "mixedof": [{"3": 2}],
+  "Atk": {"0": 2,"2": 2,"6": 2,"8": 2,"9": 2,"11": 2,"20": 2,"26": 2,"28": 2,"31": 2,"44": 2},
+  "Lv":1 ,
+  "Absorb":[] ,
+  "tAbsorb":[] ,
+  "tAbsorbTimes":0 ,
+  "sAbsorb": [],
+  "Heal": 0,
+  "Lockturns":0 ,
+  "Locklist": [],
+  "isChangeable":false ,
+  "changelist": [],
+  "description": "",
+  "gain": 0,
+  "power":0
+}

@@ -1,0 +1,21 @@
+{
+  "name": "雷",
+  "id": 2,
+  "cost":1,
+  "ismixture":false ,
+  "mixedof": [{}],
+  "Atk": {"0": 2,"1": 2,"8": 2,"30": 6,"37": 2,"38": 2,"44": 2},
+  "Lv": 1,
+  "Absorb":[11] ,
+  "tAbsorb": [],
+  "tAbsorbTimes":0 ,
+  "sAbsorb": [],
+  "Heal": 0,
+  "Lockturns":0 ,
+  "Locklist": [],
+  "isChangeable":false ,
+  "changelist": [],
+  "description": "",
+  "gain": 0,
+  "power":1
+}

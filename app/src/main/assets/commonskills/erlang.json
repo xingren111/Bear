@@ -1,0 +1,21 @@
+{
+  "name": "二郎",
+  "id": 42,
+  "cost":10,
+  "ismixture": false,
+  "mixedof": [{}],
+  "Atk": {"0": 2,"1": 2,"2": 2,"3": 2,"9": 2,"10": 2,"11": 2,"12": 2,"25": 2,"30": 2,"31": 2,"44": 2},
+  "Lv":9 ,
+  "Absorb": [43],
+  "tAbsorb": [],
+  "tAbsorbTimes":0 ,
+  "sAbsorb": [],
+  "Heal": 0,
+  "Lockturns":0 ,
+  "Locklist": [],
+  "isChangeable":false ,
+  "changelist": [],
+  "description": "",
+  "gain": 0,
+  "power":10
+}

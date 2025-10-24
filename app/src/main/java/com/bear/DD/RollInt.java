@@ -2,17 +2,17 @@ package com.bear.DD;
 
 //左右闭区间
 public class RollInt {
-    int max;
-    int min;
-    int p;
+    public int max;
+    public int min;
+    public int p;
 
-    RollInt(int min, int max) {
+    public RollInt(int min, int max) {
         this.max = max;
         this.min = min;
         p = min;
     }
 
-    void add() {
+    public void add() {
         if (p >= max) {
             p = min;
         } else {
@@ -20,7 +20,7 @@ public class RollInt {
         }
     }
 
-    void sub() {
+    public void sub() {
         if (p <= min) {
             p = max;
         } else {
@@ -28,7 +28,7 @@ public class RollInt {
         }
     }
 
-    void setp(int p) {
+    public void setp(int p) {
         this.p = p;
         if (p > max) {
             p = max;
@@ -37,11 +37,11 @@ public class RollInt {
         }
     }
 
-    int getp() {
+    public int getp() {
         return p;
     }
 
-    boolean isLegal(int num) {
+    public boolean isLegal(int num) {
         if (num < min || num > max) {
             return false;
         }

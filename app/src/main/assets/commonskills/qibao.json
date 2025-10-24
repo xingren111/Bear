@@ -1,0 +1,21 @@
+{
+  "name": "七宝",
+  "id": 38,
+  "cost":0,
+  "ismixture":true ,
+  "mixedof": [{"37": 2}],
+  "Atk": {"33": 2,"34": 2,"35": 2},
+  "Lv": 6,
+  "Absorb":[] ,
+  "tAbsorb":[0,1,3,4,5,6,7,8,9,10,12,14,15,19,20,23,25,26,28,30,31,39,40,41,44] ,
+  "tAbsorbTimes":7 ,
+  "sAbsorb": [],
+  "Heal": 0,
+  "Lockturns":0 ,
+  "Locklist": [],
+  "isChangeable":false ,
+  "changelist":[] ,
+  "description": "",
+  "gain": 0,
+  "power":0
+}

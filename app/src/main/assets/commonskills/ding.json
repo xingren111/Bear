@@ -1,0 +1,21 @@
+{
+  "name": "钉",
+  "id": 31,
+  "cost":1,
+  "ismixture":false ,
+  "mixedof": [{}],
+  "Atk": {},
+  "Lv": 4,
+  "Absorb": [32],
+  "tAbsorb":[] ,
+  "tAbsorbTimes":0 ,
+  "sAbsorb": [],
+  "Heal": 0,
+  "Lockturns":0 ,
+  "Locklist": [],
+  "isChangeable":false ,
+  "changelist": [],
+  "description": "",
+  "gain": 0,
+  "power":1
+}

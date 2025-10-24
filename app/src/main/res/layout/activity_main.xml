@@ -34,9 +34,24 @@
         <Button
             android:layout_height="50dp"
             android:layout_width="140dp"
-            android:text="新版"
+            android:text="BOBO"
             android:textSize="24dp"
-            android:enabled="false"
+            android:id="@+id/bobo"
+            android:layout_gravity="center"></Button>
+        <Button
+            android:layout_height="50dp"
+            android:layout_width="140dp"
+            android:text="Pro"
+            android:textAllCaps="false"
+            android:textSize="24dp"
+            android:id="@+id/protein"
+            android:layout_gravity="center"></Button>
+        <Button
+            android:layout_height="50dp"
+            android:layout_width="140dp"
+            android:text="帮助"
+            android:textSize="24dp"
+            android:id="@+id/help"
             android:layout_gravity="center"></Button>
     </LinearLayout>
 </LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/see_more_information"
+        android:title="查看各玩家详细数据"></item>
+    <item
+        android:id="@+id/see_help"
+        android:title="查看各技能详细数据"></item>
+</menu>

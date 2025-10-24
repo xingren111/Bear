@@ -1,0 +1,21 @@
+{
+  "name": "花果",
+  "id": 15,
+  "cost":0,
+  "ismixture":true ,
+  "mixedof": [{"5": 2}],
+  "Atk": {"0": 2,"1": 2,"2": 2,"3": 2,"4": 2,"6": 2,"8": 2,"9": 2,"10": 2,"11": 2,"12": 2,"23": 2,"24": 2,"26": 2,"28": 2,"31": 2,"40": 2,"41": 2,"42": 2,"43": 2,"44": 2},
+  "Lv":1 ,
+  "Absorb":[16] ,
+  "tAbsorb": [],
+  "tAbsorbTimes":0 ,
+  "sAbsorb": [],
+  "Heal": 0,
+  "Lockturns":0 ,
+  "Locklist": [],
+  "isChangeable":false ,
+  "changelist": [],
+  "description": "",
+  "gain": 0,
+  "power":40
+}

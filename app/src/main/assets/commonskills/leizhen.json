@@ -1,0 +1,21 @@
+{
+  "name": "雷震",
+  "id": 11,
+  "cost":0,
+  "ismixture":true ,
+  "mixedof": [{"2": 3}],
+  "Atk": {"0": 2,"1": 2,"8": 2,"9": 2,"30": 6,"31": 2,"37": 2,"38": 2,"44": 2},
+  "Lv": 1,
+  "Absorb":[] ,
+  "tAbsorb":[] ,
+  "tAbsorbTimes":0 ,
+  "sAbsorb": [],
+  "Heal": 0,
+  "Lockturns": 0,
+  "Locklist": [],
+  "isChangeable":false ,
+  "changelist": [],
+  "description": "",
+  "gain": 0,
+  "power":0
+}

@@ -13,12 +13,29 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Bear"
         tools:targetApi="31">
-
         <activity
-            android:name=".ClassicSettings"
+            android:name=".Protein.MainGame"
             android:exported="false" />
         <activity
-            android:name=".Classic"
+            android:name=".Protein.Saves_choice"
+            android:exported="false" />
+        <activity
+            android:name=".BoBo.BoBoSet"
+            android:exported="false" />
+        <activity
+            android:name=".BoBo.BoBoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Help"
+            android:exported="false" />
+        <activity
+            android:name=".KEY.BekeySetting"
+            android:exported="false" />
+        <activity
+            android:name=".ClassicDD.ClassicSettings"
+            android:exported="false" />
+        <activity
+            android:name=".ClassicDD.Classic"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

@@ -1,0 +1,21 @@
+{
+  "name": "罗汉",
+  "id": 39,
+  "cost":0,
+  "ismixture":false ,
+  "mixedof": [{}],
+  "Atk": {},
+  "Lv": 8,
+  "Absorb":[] ,
+  "tAbsorb":[] ,
+  "tAbsorbTimes":0 ,
+  "sAbsorb": [],
+  "Heal": 0,
+  "Lockturns":0 ,
+  "Locklist": [],
+  "isChangeable":false ,
+  "changelist": [],
+  "description": "",
+  "gain": 0,
+  "power":1
+}

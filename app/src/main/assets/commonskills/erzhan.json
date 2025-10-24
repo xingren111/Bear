@@ -1,0 +1,21 @@
+{
+  "name": "二斩",
+  "id": 22,
+  "cost":0,
+  "ismixture":true ,
+  "mixedof": [{"3": 1,"4": 1}],
+  "Atk": {"0": 2,"1": 2,"2": 2,"6": 2,"8": 2,"9": 2,"10": 2,"11": 2,"25": 2,"30": 2,"31": 2,"44": 2},
+  "Lv": 1,
+  "Absorb":[] ,
+  "tAbsorb":[] ,
+  "tAbsorbTimes":0 ,
+  "sAbsorb": [],
+  "Heal": 0,
+  "Lockturns":0 ,
+  "Locklist": [],
+  "isChangeable": false,
+  "changelist": [],
+  "description": "",
+  "gain": 0,
+  "power":0
+}

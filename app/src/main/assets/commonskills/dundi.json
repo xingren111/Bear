@@ -1,0 +1,21 @@
+{
+  "name": "遁地",
+  "id": 7,
+  "cost":0,
+  "ismixture":false ,
+  "mixedof": [{}],
+  "Atk": {},
+  "Lv": 1,
+  "Absorb":[] ,
+  "tAbsorb":[] ,
+  "tAbsorbTimes":0 ,
+  "sAbsorb": [],
+  "Heal": 0,
+  "Lockturns":0 ,
+  "Locklist": [],
+  "isChangeable":false ,
+  "changelist": [],
+  "description": "",
+  "gain": 0,
+  "power":0
+}

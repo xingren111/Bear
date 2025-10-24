@@ -1,0 +1,21 @@
+{
+  "name": "屠",
+  "id": 4,
+  "cost":5,
+  "ismixture":false ,
+  "mixedof": [{}],
+  "Atk": {"0": 2,"1": 2,"10": 2,"25": 2,"30": 2,"44": 2},
+  "Lv":1 ,
+  "Absorb":[14] ,
+  "tAbsorb": [],
+  "tAbsorbTimes":0 ,
+  "sAbsorb": [],
+  "Heal": 0,
+  "Lockturns":0 ,
+  "Locklist": [],
+  "isChangeable":false ,
+  "changelist": [],
+  "description": "",
+  "gain": 0,
+  "power":6
+}

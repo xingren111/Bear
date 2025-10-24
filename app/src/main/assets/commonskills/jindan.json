@@ -1,0 +1,21 @@
+{
+  "name": "金丹",
+  "id": 30,
+  "cost":0,
+  "ismixture":true ,
+  "mixedof": [{"25": 2}],
+  "Atk": {},
+  "Lv": 3,
+  "Absorb":[] ,
+  "tAbsorb": [],
+  "tAbsorbTimes":0 ,
+  "sAbsorb": [],
+  "Heal": 2,
+  "Lockturns":0 ,
+  "Locklist": [],
+  "isChangeable":false ,
+  "changelist": [],
+  "description": "",
+  "gain": 0,
+  "power":0
+}

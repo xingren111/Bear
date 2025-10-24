@@ -10,11 +10,11 @@
     android:textSize="35dp"
     android:id="@+id/BEGIN"/>
     <TextView
-        android:id="@+id/DDnum"
+        android:id="@+id/turnnum"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="当前DD数："
-        android:textSize="40dp"></TextView>
+        android:layout_height="40dp"
+        android:text="当前回合数："
+        android:textSize="32dp"></TextView>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -26,19 +26,47 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="200dp">
+                android:layout_height="200dp"
+                android:orientation="horizontal">
 
                 <ScrollView
-                    android:layout_width="match_parent"
+                    android:id="@+id/scr_status_skill"
+                    android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/scr_status">
+                    android:layout_weight="90">
 
                     <TextView
-                        android:id="@+id/status"
-                        android:layout_width="match_parent"
+                        android:id="@+id/status_skill"
+                        android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:text=""
-                        android:textSize="20dp"></TextView>
+                        android:textSize="14dp"></TextView>
+                </ScrollView>
+                <ScrollView
+                    android:id="@+id/scr_status_DD"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="100">
+
+                    <TextView
+                        android:id="@+id/status_DD"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="14dp"></TextView>
+                </ScrollView>
+                <ScrollView
+                    android:id="@+id/scr_status_out"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="100">
+
+                    <TextView
+                        android:id="@+id/status_out"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="14dp"></TextView>
                 </ScrollView>
             </LinearLayout>
 

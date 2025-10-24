@@ -1,0 +1,21 @@
+{
+  "name": "锁",
+  "id": 24,
+  "cost":0,
+  "ismixture":true ,
+  "mixedof": [{"23": 2}],
+  "Atk": {"3": 2,"12": 2},
+  "Lv": 2,
+  "Absorb":[] ,
+  "tAbsorb":[] ,
+  "tAbsorbTimes":0 ,
+  "sAbsorb": [],
+  "Heal": 0,
+  "Lockturns": 3,
+  "Locklist": [0,1,2,4,6,7,8,9,10,11,12,14,19,20,21,22,25,26,28,29,30,31,33,34,35,37,38,39,40,41,42,43,44],
+  "isChangeable":false ,
+  "changelist": [],
+  "description": "",
+  "gain": 0,
+  "power":0
+}

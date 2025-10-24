@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Protein.Saves_choice">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/saves_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FF00FF00"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHeight_percent="0.4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.15"
+        app:layout_constraintWidth_percent="0.4" />
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:enabled="false"
+        android:text="确认"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.0618"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/newsave"
+        app:layout_constraintTop_toBottomOf="@id/saves_list"
+        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintWidth_percent="0.1"/>
+
+    <Button
+        android:id="@+id/newsave"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:enabled="true"
+        android:text="新建"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.0618"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintLeft_toRightOf="@id/confirm"
+        app:layout_constraintRight_toLeftOf="@id/delete"
+        app:layout_constraintTop_toBottomOf="@id/saves_list"
+        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:enabled="false"
+        android:text="删除"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.0618"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintLeft_toRightOf="@id/newsave"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/saves_list"
+        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintWidth_percent="0.1"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

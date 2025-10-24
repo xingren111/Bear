@@ -1,0 +1,21 @@
+{
+  "name": "+20",
+  "id":0 ,
+  "cost":0 ,
+  "ismixture": false,
+  "mixedof": [{}],
+  "Atk": {},
+  "Lv": 1,
+  "Absorb":[] ,
+  "tAbsorb": [],
+  "tAbsorbTimes":0 ,
+  "sAbsorb": [],
+  "Heal": 0,
+  "Lockturns": 0,
+  "Locklist":[] ,
+  "isChangeable": false,
+  "changelist": [],
+  "description": "",
+  "gain": 20,
+  "power":0
+}

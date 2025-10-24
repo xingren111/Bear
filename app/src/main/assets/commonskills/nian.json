@@ -1,0 +1,21 @@
+{
+  "name": "念",
+  "id": 1,
+  "cost":1,
+  "ismixture":false,
+  "mixedof": [{}],
+  "Atk": {"0":2,"3": 2,"12": 2,"39": 1,"40": 2,"41":2,"44": 2},
+  "Lv": 1,
+  "Absorb":[10,18] ,
+  "tAbsorb":[] ,
+  "tAbsorbTimes":0 ,
+  "sAbsorb": [],
+  "Heal": 0,
+  "Lockturns":0 ,
+  "Locklist": [],
+  "isChangeable":false ,
+  "changelist": [],
+  "description": "",
+  "gain": 0,
+  "power":2
+}

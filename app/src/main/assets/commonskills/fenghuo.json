@@ -1,0 +1,21 @@
+{
+  "name": "风火",
+  "id": 34,
+  "cost":0,
+  "ismixture":true ,
+  "mixedof": [{"33": 2}],
+  "Atk": {"0": 2,"1": 2,"2": 2,"3": 2,"7": 2,"8": 2,"9": 2,"10": 2,"11": 2,"12": 2,"31": 2,"44": 2},
+  "Lv":5 ,
+  "Absorb":[] ,
+  "tAbsorb":[] ,
+  "tAbsorbTimes":0 ,
+  "sAbsorb": [],
+  "Heal": 0,
+  "Lockturns":0 ,
+  "Locklist": [],
+  "isChangeable":false ,
+  "changelist": [],
+  "description": "",
+  "gain": 0,
+  "power":0
+}
